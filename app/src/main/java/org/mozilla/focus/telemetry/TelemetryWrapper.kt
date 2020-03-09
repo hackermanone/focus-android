@@ -563,7 +563,7 @@ object TelemetryWrapper {
 
     @JvmStatic
     fun openNotificationActionEvent() {
-        TelemetryEvent.create(Category.ACTION, Method.CLICK, Object.NOTIFICATION_ACTION, Value.OPEN).queue()
+        TelemetryEvent.create(Category.ACTION, Method.CLICK, Object.HOMESCREEN_SHORTCUT, Value.OPEN).queue()
     }
 
     @JvmStatic
