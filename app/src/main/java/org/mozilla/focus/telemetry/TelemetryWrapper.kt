@@ -561,6 +561,9 @@ object TelemetryWrapper {
                 .extra(Extra.SUBMIT_CRASH, crashSubmitted.toString()).queue()
     }
 
+    /*
+        Updated TelemtryEvent so that it will not create a new display to fix issue 4289
+     */
     @JvmStatic
     fun openNotificationActionEvent() {
         TelemetryEvent.create(Category.ACTION, Method.CLICK, Object.HOMESCREEN_SHORTCUT, Value.OPEN).queue()
